@@ -1,0 +1,13 @@
+//created mixin for breakpoints later we can add as required breakpoints
+@mixin breakpoint($min) {
+    $brekpointQuery: "all" !default;
+    $large: 992;
+
+    @if $min == "large" {
+        $brekpointQuery: "all and (min-width: #{$large}px)";
+    }
+
+    @media #{$brekpointQuery} {
+        @content;
+    }
+}

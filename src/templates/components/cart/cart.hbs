@@ -1,0 +1,80 @@
+<section class="content-container cart center">
+    <div class="description">
+        <h2>{{title}}</h2>
+        <p>{{description}} </p>
+        <p>{{description1}}</p>
+    </div>
+
+    <form class="product-section" action="#">
+        <div class="product-row">
+            <ul class="t-head cols">
+                <li class="col1">Product</li>
+                <li class="col2">Price</li>
+                <li class="col3">Qty</li>
+                <li class="col4">Cost </li>
+                <li class="col5"></li>
+            </ul>
+
+            {{#each productList}}
+            <ul class="row cols {{#if bg}} bg {{/if}}">
+                <li class="col1">{{name}} </li>
+                <li class="col2">
+                    <span>{{currancy}}</span>{{price}}</li>
+                <li class="col3">
+                    <div class="outer-box">
+                        <label for="number{{productId}}" class="hide">Quantity </label>
+                        <input type="text" id="number{{productId}}" value="{{quantity}}" class="count">
+
+                        <a href="#" class="increment">+
+                            <span class="hide">Increment</span>
+                        </a>
+                        <a href="#" class="decrement"> -
+                            <span class="hide">Decrement</span>
+                        </a>
+
+                    </div>
+
+                </li>
+                <li class="col4 cost">
+                    <span>{{currancy}}</span>
+                    <span class="t-cost">{{totalCost}}</span>
+                </li>
+                <li class="col5">
+                    <a href="#" data-pid="{{productId}}" class="delete" title="delete">
+                        <span class="hide">Delete</span>
+                    </a>
+                </li>
+            </ul>
+            {{/each}}
+
+        </div>
+        <div class="price-row">
+            <div class="row">
+                <div class="col1">{{costData.subTotalLabel}}</div>
+                <div class="col2">
+                    <span>{{currancy}}</span>
+                    <span class="sub-total">{{costData.totalPrice}}</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1"> {{costData.vatLabel}}</div>
+                <div class="col2">
+                    <span>{{currancy}}</span>
+                    <span class="vat">{{costData.vat}}</span>
+                </div>
+            </div>
+            <div class="row final-amount">
+                <div class="col1"> {{costData.totalCostLable}}</div>
+                <div class="col2 final-price">
+                    <span>{{currancy}}</span>
+                    <span class="total-cost">{{costData.totalCost}}</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="button-row">
+                    <input type="submit" class="submit" value="Buy Now »">
+                </div>
+            </div>
+        </div>
+    </form>
+</section>

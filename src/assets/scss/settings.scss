@@ -1,0 +1,43 @@
+//Colors should be defined hered
+$black: #000;
+$white: #fff;
+$blue: #000066;
+$gray: #666;
+$red: #d10707;
+$light-gray: #dadada;
+$gray-100: #ddd;
+$gray-200: #787878;
+$gray-300: #999;
+
+body {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    color: $black;
+    font-size: 14px;
+    line-height: 16px;
+   
+}
+
+.wrapper {
+    min-height: calc(100% - 42px);
+    position: relative;
+    padding-bottom: 80px;
+    min-width: 375px;
+    background: linear-gradient(to bottom, $white 0%, $light-gray 100%);
+}
+
+.center {
+    margin: 0 auto;
+    max-width: 528px;
+}
+
+.content-container {
+    padding: 0 20px;
+
+    @include breakpoint("large") {
+        padding: 0;
+    }
+}
+
+.hide {
+    display: none;
+}

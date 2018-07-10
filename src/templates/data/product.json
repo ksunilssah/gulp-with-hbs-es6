@@ -1,0 +1,41 @@
+{
+    "currancy": "£",
+    "title": "Your Basket",
+    "description": "Items you have added to your basket are shown below.",
+    "description1": "Adjust the quantities or remove items before continuing your purchase.",
+    "costData": {
+        "subTotalLabel": "Subtotal",
+        "vatLabel": " VAT @ 20%",
+        "totalCostLable": "Total Cost",
+        "vat": 2.39,
+        "totalPrice": 11.96,
+        "totalCost": 14.35
+    },
+    "productList": [{
+            "productId": 1,
+            "name": "Cotton T-Shirt, Medium",
+            "price": 1.99,
+            "quantity": 1,
+            "totalCost": 1.99,
+            "currancy": "£",
+            "bg": false
+        }, {
+            "productId": 2,
+            "name": "Baseball Cap, One Size",
+            "price": 2.99,
+            "currancy": "£",
+            "quantity": 2,
+            "totalCost": 5.98,
+            "bg": true
+        },
+        {
+            "productId": 3,
+            "name": "Swim Shorts, Medium",
+            "price": 3.99,
+            "quantity": 1,
+            "totalCost": 3.99,
+            "currancy": "£",
+            "bg": false
+        }
+    ]
+}

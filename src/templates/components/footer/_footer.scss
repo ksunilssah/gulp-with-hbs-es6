@@ -1,0 +1,12 @@
+footer{
+    background-color: $gray;
+    text-align: center;
+    border-top: 1px solid $black;
+
+    p{
+        font-size: 12px;
+        line-height: 14px;
+        color: $white;
+        padding: 13px;
+    }
+}

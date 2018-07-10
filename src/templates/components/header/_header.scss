@@ -1,0 +1,16 @@
+header {
+    padding: 30px 20px;
+
+    @include breakpoint("large") {
+        padding: 131px 0 73px 20px;
+    }
+
+
+    img {
+        max-width: 75px;
+
+        @include breakpoint("large") {
+            max-width: 100px;
+        }
+    }
+}
