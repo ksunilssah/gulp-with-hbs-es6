@@ -1,4 +1,4 @@
-# AKQA test --Sunil kumar sah 
+# Gulp with HBS
 
 I have used gulp as  build tool to compile SCSS, JS(ES6), .hbs files to build final html files.
  Use shared dist folder for directly accessing the final output. To install project locally follow below mentioned steps.
